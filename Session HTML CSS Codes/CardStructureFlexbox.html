@@ -1,0 +1,92 @@
+<!doctype html>
+<title>Card Structure</title>
+<style>
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card{
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.66);
+        height: 400px;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(144, 147, 148, 0.92);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(69, 68, 68, 0.815);
+    }
+    .text{
+        padding: 10px;
+    }
+    img{
+        width: 100%;
+    }
+
+    button{
+        width: 200px;
+        background-color: rgb(74, 144, 148);
+        color: aliceblue;
+        font-weight: bold;
+        padding: 10px;
+        
+    }
+
+    body{
+        /* background: linear-gradient(red,yellow,green); */
+        background: radial-gradient(circle, rgb(237, 218, 255) 50%,white,rgb(182, 182, 182));
+    }
+</style>
+
+<main class="cards">
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWPVEPuguQqq-R-C6pceHhE6kPdWLLM3Xow&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>taj mahal</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, perferendis?</p>
+      <button>read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZNgolpcuqWmjPgIgEInZYU3Oq2i377aSQQ&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>pyramids of egypt</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque..</p>
+      <button>read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYufxcKNxl-K-31OkCNZHv0QLarmcViKsUA&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>great wall of china</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, aspernatur!</p>
+      <button>Read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwhFAgl43pVYggkxEjBm7Zigi9IV3VeZXlwg&usqp=CAU" alt="Sample photo" id = "image">
+    <div class="text">
+      <h3>Hanging gardens Babylon</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, laborum?</p>
+      <button>Read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxm-OLzTf3c3eHQQw-N0LEIzljuryF-FchRQ&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>lighthouse of alexandra</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, error..</p>
+      <button>Read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://www.thoughtco.com/thmb/QForHc9TqXkBVzEEuDQEdaqchwM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/statueofzeus-58b9e03e3df78c353c4d9e95-5b60869746e0fb002cee3eb1.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Statue of Zeus at Olympia</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, eum?</p>
+      <button>Read more</button>
+    </div>
+  </article>
+</main>

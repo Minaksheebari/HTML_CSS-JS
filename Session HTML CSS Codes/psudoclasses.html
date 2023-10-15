@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Psudoclass work on complete class */
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: deepskyblue;
+        }
+        a:hover{
+            color: blueviolet;
+            background-color: bisque;
+        }
+        a:focus{
+            color: red;
+        }
+        a:active{
+            color: gold;
+        }
+
+        button:hover{
+            color: blueviolet;
+            background-color: bisque;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        ul li:first-child{
+            color:brown
+        }
+        ul li:last-child{
+            color:brown
+        }
+        ul li:nth-child(2){
+            color:rgb(107, 203, 39)
+        }
+        ul li:nth-child(3){
+            color:rgb(28, 73, 188)
+        }
+        ul li:nth-child(4){
+            color:rgb(187, 39, 203)
+        }
+
+        /* for even numbers */
+        ul li:nth-child(2n){
+            color:rgb(234, 30, 15)
+        }
+
+        /* Psudo Element work on single element */
+
+        p::first-line{
+            color: rgb(79, 178, 218);
+        }
+        P::first-letter{
+            color:rgb(234, 30, 15);
+            font-size: xx-large;
+        }
+        p::after{
+            content: "hello";
+        }
+        p::before{
+            content: "hello";
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="https://www.w3schools.com/css/css_pseudo_classes.asp"><h1>Click me</h1></a>
+        <button>CLICK ME</button>
+    </div>
+    <ul><h3>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li></h3>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur 
+        <br>adipisicing elit. Cumque veniam ut, repellat, amet consequatur illum cupiditate nobis
+        <br> eligendi perferendis ratione quaerat eveniet unde dolores rem mollitia ipsa pariatur odio qui!</p>
+</body>
+</html>

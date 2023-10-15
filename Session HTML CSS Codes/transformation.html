@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation Example</title>
+    <style>
+        .box{
+            justify-items: center;
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            color: aliceblue;
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition: background-color 2s ease-in 1s;
+            transform: translateX(200px);
+            transform: translateY(200px);
+            transform: translateZ(200px);
+            /* transform: rotate(30deg); */
+            /* transform: skew(-45deg,20deg); */
+            /* transform: translate(150px,200px); */
+        }
+        div:hover{
+            transform: scale(2);    
+            background-color: chocolate;
+        }
+
+        .btn{
+            width: 100px;
+            height: 60px;
+            background-color: aquamarine;
+            transition: background-color 3s ease-in;
+
+        }
+        .btn:hover{
+            background-color: chocolate;
+            border-radius: 50%;
+            font-size: medium;
+            font-weight: bold;
+            transform: scale(0.5);
+            /* transform: translateX(200px); */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">Box 1</div>
+    <br>
+    
+    <button class="btn">Click Me</button>
+
+</body>
+</html>
+

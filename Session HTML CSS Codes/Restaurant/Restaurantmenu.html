@@ -1,0 +1,276 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: crimson;
+            color: white;
+            font-size: larger;
+            text-align: center;
+            padding: 20px;
+            padding-top: 10px;
+            max-height:fit-content;
+        }
+        .nav a{
+            margin-top: 5px;
+            color: aliceblue;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        body{
+            /* height: 100%; */
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .container{
+            height: 450px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+        }
+        .menu{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .container h2{
+            text-align: center;
+        }
+
+        .menu-item{
+            display: inline-block;
+            text-align: left;
+            width:calc(33.3% - 15px);
+            padding: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border: 0.5px solid gray;
+            border-radius: 10px;
+            
+        }
+        .menu-item-image{
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        .menu-item-name{
+            font-size: larger;
+            font-weight: bold;
+        }
+        .menu-item-price{
+            font-size: larger;
+            position: absolute;
+            right: 0;
+            margin-bottom: 20px;
+ 
+        }
+        .menu-item-info{
+            position: relative;
+        }
+
+        .menu-item:hover{
+            box-shadow: 5px 5px 15px gray;
+            border: 2px solid black;
+            
+        }
+    
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Restaurant Application</h1>
+        <nav class="nav">
+            <a href="Restaurantindex.html">Home</a>
+            <a href="Restaurantorder.html">Place an Order</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Our Menu</h2>
+
+        <div class="menu">
+            <div class="menu-item">
+                <img src="https://foodhub.scene7.com/is/image/woolworthsltdprod/Easy-chicken-and-bacon-pasta:Desktop-1300x658" alt="Pasta" class="menu-item-image">
+                <div class="menu-item-info">
+                    <div class="menu-item-name">Pasta</div>
+                    <div class="menu-item-price">$12.99</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg" alt="Pizza" class="menu-item-image">
+                <div class="menu-item-info">
+                    <div class="menu-item-name">Pizza</div>
+                    <div class="menu-item-price">$14.99</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://c.ndtvimg.com/2022-06/gp4k2jro_burgers_625x300_20_June_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350?im=FaceCrop,algorithm=dnn,width=1200,height=886" alt="Burger" class="menu-item-image">
+                <div class="menu-item-info">
+                    <div class="menu-item-name">Burger</div>
+                    <div class="menu-item-price">$9.99</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Salad" class="menu-item-image">
+                <div class="menu-item-info">
+                    <div class="menu-item-name">Salad</div>
+                    <div class="menu-item-price">$8.99</div>
+                </div>
+            </div>          
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Restaurant Application. All rights reserved.</p>
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .page-container {
+            position: relative;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: crimson;
+            color: white;
+            font-size: larger;
+            text-align: center;
+            padding: 20px;
+            padding-top: 10px;
+            max-height:fit-content;
+        }
+        .nav {
+            margin-top: 5px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            padding-bottom: 100px;
+            text-align: center;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu-item {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            border: 1px solid black;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .menu-item-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 15px auto;
+        }
+        .menu-item-name, .menu-item-price {
+            font-size: 20px;
+        }
+        .menu-item:hover {
+            box-shadow: 0 0 10px blue;
+        }
+        
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .menu-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Restaurant Application</h1>
+            <nav class="nav">
+                <a href="Restaurantindex.html">Home</a>
+                <a href="Restaurantorder.html">Place an Order</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="https://foodhub.scene7.com/is/image/woolworthsltdprod/Easy-chicken-and-bacon-pasta:Desktop-1300x658" alt="Pasta" class="menu-item-image">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Pasta</div>
+                        <div class="menu-item-price">$12.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg" alt="Pizza" class="menu-item-image">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Pizza</div>
+                        <div class="menu-item-price">$14.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://c.ndtvimg.com/2022-06/gp4k2jro_burgers_625x300_20_June_22.jpg" alt="Burger" class="menu-item-image">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Burger</div>
+                        <div class="menu-item-price">$9.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Salad" class="menu-item-image">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Salad</div>
+                        <div class="menu-item-price">$8.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2023 Restaurant Application. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

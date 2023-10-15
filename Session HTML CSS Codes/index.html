@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <form action="process_order.php" method="post">
+            <fieldset>
+                <caption>Delivery Address</caption>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="9" required></textarea>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="zipcode">Zip Code:</label>
+                <input type="text" id="zipcode" name="zipcode" required>
+            </fieldset>
+
+            <section>
+                <h2>Payment Information</h2>
+                <label for="cardtype">Card Type:</label>
+                <select id="cardtype" name="cardtype" required>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+
+                <label for="cardnumber">Card Number:</label>
+                <input type="text" id="cardnumber" name="cardnumber" required>
+
+                <label for="expdate">Expiration Date:</label>
+                <input type="text" id="expdate" name="expdate" placeholder="MM/YYYY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </section>
+
+            <section>
+                <h2>Additional Options</h2>
+                <label>
+                    <h1>Subscribe to our newsletter</h1>
+                    <input type="radio" name="newsletter" value="yes" >Yes
+                    <input type="radio" name="newsletter" value="no" >No
+
+                    </label>
+
+                <h3>Shipping Method</h3>
+                <label>
+                    <input type="radio" name="shipping" value="standard" > Standard Shipping ($5.00)
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="express"> Express Shipping ($10.00)
+                </label>
+            </section>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Data Using Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* body{
+            display: flex;
+            justify-content: center;
+        } */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container{
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.212);
+            background-color: #dfffea;
+            padding: 20px;
+            overflow: hidden;
+            display: grid;
+            /* justify-content: center;
+            background-color: rgb(201, 252, 235);
+            border: 2px solid black;
+
+            padding: 10px;
+            margin: 30px;
+            display: grid; */
+            /* max-width: 470px; 
+            grid-template-columns: 70px 100px 100px 100px 100px;
+            grid-template-rows: 50px auto; */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 20px;
+            max-width: 650px;
+        }
+
+        .heading{
+            font-weight: bold;
+            font-size: larger;
+            
+        }
+
+        /* Action icons */
+        .action-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-icons i {
+            cursor: pointer;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .fa-eye {
+            background-color: rgb(28, 190, 28);
+        }
+
+        .fa-pencil {
+            background-color: rgb(41, 41, 224);
+        }
+
+        .fa-trash {
+            background-color: rgb(203, 40, 40);
+        }
+
+        .row1:hover {
+            background-color: #1bc284;
+        }
+    </style>
+</head>
+<body>
+    <h1>Last Appointment</h1>
+    <div class="container">
+        
+        <div class="heading">Sr.No.</div>
+        <div class="heading">Name</div>
+        <div class="heading">Doctor</div>
+        <div class="heading">Condition</div>
+        <div class="heading">Actions</div>
+    
+        <div class="row1">1</div>
+        <div class="row1">Minakshee</div>
+        <div class="row1">Dr.Patel</div>
+        <div class="row1">Heartburn</div>
+        <div class="row1">
+            <div class="action-icons">
+                <i class="fa fa-eye"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="row1">2</div>
+        <div class="row1">Vaibhav</div>
+        <div class="row1">Dr.Singh</div>
+        <div class="row1">Headache</div>
+        <div class="row1">
+            <div class="action-icons">
+                <i class="fa fa-eye"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="row1">3</div>
+        <div class="row1">Urvi</div>
+        <div class="row1">Dr.Gosh</div>
+        <div class="row1">Acne</div>
+        <div class="row1">
+            <div class="action-icons">
+                <i class="fa fa-eye"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="row1">4</div>
+        <div class="row1">Neeraj</div>
+        <div class="row1">Dr.Singh</div>
+        <div class="row1">Knee Pain</div>
+        <div class="row1">
+            <div class="action-icons">
+                <i class="fa fa-eye"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="row1">5</div>
+        <div class="row1">Ajay</div>
+        <div class="row1">Dr.Gosh</div>
+        <div class="row1">Pimples</div>
+        <div class="row1">
+            <div class="action-icons">
+                <i class="fa fa-eye"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+   
+    </div>
+</body>
+</html>

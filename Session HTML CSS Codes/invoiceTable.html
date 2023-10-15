@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:darkmagenta;
+        }
+        table th{
+            background-color:blanchedalmond;
+            color: darkmagenta;
+        }
+        .first{
+            background-color:plum;
+            color: black;
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+    <title>Table Invoice</title>
+   
+</head>
+<body>
+        <p style="text-align: center; font-size: x-large; color: chocolate; font-weight: bolder;">Invoice</p>
+        <table border="1" width="550" align="center">
+
+            <tr>
+                <th colspan="3"><h3>Purchase Order: 1111</th></h3>
+                <th><h3>Hero Vired FSD Batch 11</th></h3>
+            </tr>
+            <tr>
+                <td colspan="2">Vendor:<br>Dummy data<br>Dummy data<br>Dummy data<br>Dummy data</td>
+                <td colspan="2">SHIP TO:<br>Dummy data<br>Dummy data<br>Dummy data</td>
+            </tr>
+            <tr>
+                <th>Qty.</th>
+                <th>Item Code.</th>
+                <th>Description</th>
+                <th>Unit Price</th></h3>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>IABCDE</td>
+                <td>Pencils</td>
+                <td>20.00</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>IN877</td>
+                <td>Notebooks</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>IP8675</td>
+                <td>Pens</td>
+                <td>70.00</td>
+            </tr>
+
+            <tr>
+                <td class="first" colspan="3">Subtotal</td>
+                <td>190.00</td>
+            </tr>
+
+            <tr>
+                <td class="first" colspan="2">GST</td>
+                <td>5%</td>
+                <td>9.50</td>
+            </tr>
+
+            <tr>
+                <td class="first" colspan="3">Grand Total</td>
+                <td style="background-color:chocolate; color: aliceblue; font-weight: bold;">$ 199.50</td>
+            </tr>
+
+        </table>
+</body>
+</html>

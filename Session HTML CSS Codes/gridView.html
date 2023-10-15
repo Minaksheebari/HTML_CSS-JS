@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid View Example</title>
+    
+    <style>
+        .widget{  
+            
+            background-color: rgb(249, 244, 250);
+            border: 1px solid black;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px crimson;
+            
+        }
+        .dashboard{
+            text-align: center;
+            max-width: 400px;
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr;   */
+            /* fr means fractional part */
+
+            grid-template-columns: 100px 200px 100px;
+            grid-template-rows: 100 auto;
+            gap: 40px;
+            grid-template-columns: repeat(auto-fill,
+             minmax(200px 1fr));
+        }
+
+        body{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="widget">Widget 1</div>
+        <div class="widget">Widget 2</div>
+        <div class="widget">Widget 3</div>
+        <div class="widget">Widget 4</div>
+        <div class="widget">Widget 5</div>
+        <div class="widget">Widget 6</div>
+    </div>
+</body>
+</html>`    
