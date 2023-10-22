@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of functions</title>
+</head>
+<body>
+    <script>
+        samplearr=[4,5,6,7,8];
+
+        function calAverage(){
+            sum = 0;
+            for(let i=0;i<5;i++){
+                sum =sum + samplearr[i];
+            }
+            average = sum / 5;
+            return average;
+        }
+        average = calAverage();
+        console.log("Average is: "+average);
+    </script>
+</body>
+</html>

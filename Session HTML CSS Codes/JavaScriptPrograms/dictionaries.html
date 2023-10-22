@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Object</title>
+</head>
+<body>
+    <script>
+        student = {
+            name : "Sohail",
+            feedback : 4.5,
+            address : {
+                city : "Jalgaon",
+                state : "Maharashtra",
+                zip : 425001,
+            },
+        };
+
+        console.log ("Student 1 is : " + student.name);
+        console.log(student.name + " has given feedback as : " + student.feedback);
+        console.log(student.name + " is living in : " + student.address.city);
+        console.log(student.address.city + " is in state : "+ student.address.state);
+        console.log("Address of " + student.name + " is: " + student.address.zip);
+
+        //array of object
+        namearr =[
+            {
+            sname : "Sohail",
+            feedback : 4,
+            },
+
+            {
+            sname : "Minakshee",
+            feedback : 3,
+            },
+
+            {
+            sname : "Vaibhav",
+            feedback : 2,
+            },
+
+            {
+            sname : "Neeraj",
+            feedback : 1,
+            },
+        ];
+        //console.log (namearr[0].feedback);
+
+        for(let i=0;i<4;i++){
+           //console.log(namearr[i].sname);
+           if(namearr[i].feedback>=3){
+            console.log(namearr[i].sname + " has given Good feedback as " + namearr[i].feedback);
+           }
+           else{ 
+            console.log(namearr[i].sname + " has given Bad feedback as " + namearr[i].feedback);
+           }
+        }    
+    </script>
+</body>
+</html>

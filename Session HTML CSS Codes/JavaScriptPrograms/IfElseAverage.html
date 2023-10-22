@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <script>
+      console.log(" This is my first js");
+    //   var feedback1 = 5;
+    //   var feedback2 = 3;
+    //   var feedback3 = 4;
+    //   var feedback4 = 5;
+    //   var feedback5 = 2;
+    //   var average;
+    //   average = (feedback1 + feedback2 + feedback3 + feedback4 + feedback5) / 5;
+    //   console.log("The Average is: ",average);
+    //   if (average > 4) {
+    //     console.log("The feedback is good");
+    //   } else {
+    //     console.log("The feedback is bad");
+    //   }
+
+    //   var name1 = "Ajay";
+    //   var name2 = "Vaibhav";
+    //   var name3 = "Neeraj";
+    //   var name4 = "Sohail";
+    //   var name5 = "Faisal";
+
+    //   if(feedback1>4){
+    //     console.log(name1," has given Good Feedback")
+    //   }
+    //   else{
+    //     console.log(name1," has given Bad Feedback")
+    //   }
+      
+    //   if(feedback2>4){
+    //     console.log(name2," has given Good Feedback")
+    //   }
+    //   else{
+    //     console.log(name2," has given Bad Feedback")
+    //   }
+
+    //   if(feedback3>4){
+    //     console.log(name3," has given Good Feedback")
+    //   }
+    //   else{
+    //     console.log(name3," has given Bad Feedback")
+    //   }
+
+    //   if(feedback4>4){
+    //     console.log(name4," has given Good Feedback")
+    //   }
+    //   else{
+    //     console.log(name4," has given Bad Feedback")
+    //   }
+
+    //   if(feedback5>4){
+    //     console.log(name5," has given Good Feedback")
+    //   }
+    //   else{
+    //     console.log(name5," has given Bad Feedback")
+    //   }
+
+      // Array
+      namearr=["Ajay","Vaibhav","Neeraj","Sohail","Faisal"]
+      feedbacksarr=[5,3,2,5,4];
+      var fbAvg = 0;
+      var fbSum = 0;
+      //console.log(feedbacksarr[0]);
+      //for loop 
+      for(let i=0;i<5;i++){
+        // console.log(feedbacksarr[i]);
+        // console.log(namearr[i]);
+       // console.log(namearr[i] + " has given " + feedbacksarr[i] + " as Feedback.");
+        
+        if(feedbacksarr[i]>4)
+            console.log(namearr[i] + " has given Good feedback");
+        else if(feedbacksarr[i]>2){
+            console.log(namearr[i] + " has given Ok feedback");
+        }
+        else{
+            console.log(namearr[i] + " has given Bad feedback");
+        }
+            fbSum = fbSum + feedbacksarr[i];
+            fbAvg = fbSum / 5;
+        }
+        console.log("Avrage of feedback array is: " + fbAvg);
+
+
+        //switch case
+        today = 1;
+        switch(today){
+            case 0: console.log("Sunday");
+                    break;
+            case 1: console.log("Monday");
+                    break;
+            default : console.log("Incorrect");
+        }
+
+
+    </script>
+  </body>
+</html>
