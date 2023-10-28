@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check User Name</title>
+</head>
+<body>
+    <script>
+        // usernameArr = ['User1','User2','User3']
+        
+        // if(usernameArr.includes("User4")){
+        //     console.log("This user name is already exists.");
+        // }
+        // else{
+        //     usernameArr.push("User4")
+        // }
+        // console.log(usernameArr)
+
+        const users = ["user1", "user2", "user3"];
+
+        // if (users.indexOf("user2") != -1) {
+        //   console.log("This user name already exist !");
+        // } else {
+        //   users.push("user4");
+        // }
+
+        if (users.indexOf("user4") != -1) {
+        console.log("This user name already exist !");
+        } else {
+        users.push("user4");
+        }
+        console.log(users);
+
+        let s1="whenever there is darkness there will be ray of light";
+        let s2 = "light";
+        let arr=s1.split(" ")
+
+        if(s1.includes(s2)){
+            console.log("Word is present");
+        }
+        else{
+            console.log("Word is missing");
+        }
+
+        let pos = arr.indexOf(s2);
+        console.log(pos);
+        arr[pos]="spark";
+
+        s1=arr.join(" ")
+        console.log(s1);
+        
+
+
+
+    </script>
+</body>
+</html>

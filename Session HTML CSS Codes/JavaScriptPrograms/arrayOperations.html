@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+</head>
+<body>
+    <script>
+        let arr1=[11,22,33,44,55]
+        console.log(arr1[2]);
+
+        arr1.push(66); 
+        //add the value at the end
+        console.log(arr1);
+
+        arr1.unshift(66); 
+        //add the value at the starting
+        console.log(arr1);
+
+        arr1.pop(); 
+        //remove the value from the end
+        console.log(arr1);
+
+        arr1.shift(); 
+        //remove the value from the starting
+        console.log(arr1);
+
+        arr1.splice(2,3) 
+        // remove value.. start from 2 and delete 3 values
+        console.log(arr1);
+
+        arr1.splice(2,0,77,88) 
+        // add value.. start from 2 and delete 0 values
+        console.log(arr1);
+
+        arr1.splice(2,1,33,44,44) 
+        // add value.. start from 2 and delete 1 value
+        console.log(arr1);
+
+        // converting string to aaray
+        let s1 = "Minu 35 20000 trainer"
+        let arr2 = s1.split(" ");
+        console.log(arr2)
+
+        //updating value
+        //we can not manipulate values using splice
+        arr2[2]=300000
+        console.log(arr2)
+
+        //Joining array to get all array elements as a single string
+        s1 = arr2.join(" ")
+        console.log(s1)
+
+        //searching into array
+        console.log(arr1.indexOf(44))       //return index 
+        console.log(arr1.indexOf(100))      //always return a number -1 if value not present
+        console.log(arr1.lastIndexOf(44))   //if element present multiple times
+        console.log(arr1.includes(32))      // element present or not will give boolean value as o/p
+        console.log(arr1.includes(33))      
+    
+    </script>
+</body>
+</html>
