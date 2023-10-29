@@ -57,8 +57,60 @@
         console.log(arr1.indexOf(100))      //always return a number -1 if value not present
         console.log(arr1.lastIndexOf(44))   //if element present multiple times
         console.log(arr1.includes(32))      // element present or not will give boolean value as o/p
-        console.log(arr1.includes(33))      
-    
+        console.log(arr1.includes(33))  
+        
+        //manipulating values using loop
+        const prices=[100,200,300,400]
+        const newPrices=[]
+
+        console.log("Original elements:");
+        console.log(prices);
+
+        //multiply each element by 80
+        console.log("Multiple by 80 of each element:");
+        for(let i of prices){
+            i=i*80
+            newPrices.push(i)
+        }
+        console.log(newPrices);
+        
+
+        //manipulating values using map method
+        console.log("Double of each element:");
+        const newmap = prices.map(function(x){
+            return x*2
+        })
+        console.log(newmap);
+
+        console.log("Cube of each element:");
+        const cube = prices.map(function(x){
+            return x*x*x;
+        })
+        console.log(cube);
+
+
+        //Arrow function 
+        console.log("Adding 2 using arrow function:");
+        const sum2 = prices.map((x)=>x+2)
+        console.log(sum2);
+
+        //Use of this
+        const name="Minu"
+        function display(){
+            console.log(this.name);
+        }
+        console.log(this===window);
+        display();  // not display anything due to scope
+
+        
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
