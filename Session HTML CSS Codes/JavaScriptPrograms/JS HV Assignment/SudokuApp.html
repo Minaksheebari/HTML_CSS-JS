@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isValidSudoku(board) {
+    // Function to check if an array of values contains duplicates
+    const hasDuplicates = (values) => {
+        const seen = new Set();
+        for (const value of values) {
+            if (value !== '.' && seen.has(value)) {
+                return true;
+            }
+            seen.add(value);
+        }
+        return false;
+    };
+
+    // Check each row
+    for (let i = 0; i < 9; i++) {
+        if (hasDuplicates(board[i])) {
+            return false;
+        }
+    }
+
+    // Check each column
+    for (let j = 0; j < 9; j++) {
+        const column = [];
+        for (let i = 0; i < 9; i++) {
+            column.push(board[i][j]);
+        }
+        if (hasDuplicates(column)) {
+            return false;
+        }
+    }
+
+    // Check each 3 x 3 sub-box
+    for (let boxRow = 0; boxRow < 3; boxRow++) {
+        for (let boxCol = 0; boxCol < 3; boxCol++) {
+            const values = [];
+            for (let i = 3 * boxRow; i < 3 * boxRow + 3; i++) {
+                for (let j = 3 * boxCol; j < 3 * boxCol + 3; j++) {
+                    values.push(board[i][j]);
+                }
+            }
+            if (hasDuplicates(values)) {
+                return false;
+            }
+        }
+    }
+
+    // If all checks pass, the Sudoku board is valid
+    return true;
+}
+
+// Example usage with the provided input
+const sudokuBoard = [
+    ["5","3",".",".","7",".",".",".","."],
+    ["6",".",".","1","9","5",".",".","."],
+    [".","9","8",".",".",".",".","6","."],
+    ["8",".",".",".","6",".",".",".","3"],
+    ["4",".",".","8",".","3",".",".","1"],
+    ["7",".",".",".","2",".",".",".","6"],
+    [".","6",".",".",".",".","2","8","."],
+    [".",".",".","4","1","9",".",".","5"],
+    [".",".",".",".","8",".",".","7","9"]
+];
+
+const result = isValidSudoku(sudokuBoard);
+console.log(result); // Output: true
+
+    </script>
+</body>
+</html>

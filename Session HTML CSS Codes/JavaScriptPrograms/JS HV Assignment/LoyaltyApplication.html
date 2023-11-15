@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+    const customers = [
+    { customerID: 1, customerName: 'Minakshee Bari', totalBillingAmount: 4500 },
+    { customerID: 2, customerName: 'Jayant Bari', totalBillingAmount: 3500 },
+    { customerID: 3, customerName: 'Sumit Bari', totalBillingAmount: 2800 },
+    { customerID: 4, customerName: 'Rekha Bari', totalBillingAmount: 4000 },
+    { customerID: 5, customerName: 'Rajlakshmi Bari', totalBillingAmount: 3200 },
+    { customerID: 6, customerName: 'Deelip Bari', totalBillingAmount: 3000 },
+    ];
+
+    const highBillingCustomers = customers.filter(customer => customer.totalBillingAmount > 3000);
+
+    const customerDetails = highBillingCustomers.map(customer => {
+    return {
+        customerName: customer.customerName,
+        purchaseDetails: `Customer ID: ${customer.customerID}, Total Billing Amount: Rs. ${customer.totalBillingAmount}/-`
+    };
+});
+
+    const resultString = customerDetails.reduce((accumulator, currentCustomer) => {
+    return accumulator + `\n${currentCustomer.customerName}: ${currentCustomer.purchaseDetails}`;
+}, 'Customers with total billing amount more than Rs. 3000/-:\n');
+
+    console.log(resultString);
+
+    </script>
+</body>
+</html>
