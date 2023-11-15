@@ -7,8 +7,7 @@
 </head>
 <body>
     <script>
-        function isValidSudoku(board) {
-    // Function to check if an array of values contains duplicates
+    function isValidSudoku(board) {
     const hasDuplicates = (values) => {
         const seen = new Set();
         for (const value of values) {
@@ -20,14 +19,12 @@
         return false;
     };
 
-    // Check each row
     for (let i = 0; i < 9; i++) {
         if (hasDuplicates(board[i])) {
             return false;
         }
     }
 
-    // Check each column
     for (let j = 0; j < 9; j++) {
         const column = [];
         for (let i = 0; i < 9; i++) {
@@ -37,8 +34,6 @@
             return false;
         }
     }
-
-    // Check each 3 x 3 sub-box
     for (let boxRow = 0; boxRow < 3; boxRow++) {
         for (let boxCol = 0; boxCol < 3; boxCol++) {
             const values = [];
@@ -52,12 +47,9 @@
             }
         }
     }
-
-    // If all checks pass, the Sudoku board is valid
     return true;
 }
 
-// Example usage with the provided input
 const sudokuBoard = [
     ["5","3",".",".","7",".",".",".","."],
     ["6",".",".","1","9","5",".",".","."],
@@ -71,7 +63,7 @@ const sudokuBoard = [
 ];
 
 const result = isValidSudoku(sudokuBoard);
-console.log(result); // Output: true
+console.log(result);
 
     </script>
 </body>
