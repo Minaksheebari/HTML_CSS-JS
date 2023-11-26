@@ -38,5 +38,8 @@ console.log(divClasses.innerText);
 
 console.log(divClasses.value);  //output: Undefined // It will work on input tags only
 
-const inputTag =document.querySelector(".input");
-console.log(inputTag.value);
+// const inputTag =document.querySelector(".input");
+// console.log(inputTag.value);
+
+const introTag = document.querySelector('p');
+introTag.style.color='red';
