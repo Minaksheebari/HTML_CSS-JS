@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 
+        Learning how to make Modal?
+        login: email, password and submit button
+        background of the login form should be position fixed.
+    -->
+    <link rel="=stylesheet" href="styleLearningModal.css">
+    
+    <div class="header" style="background-color: aquamarine;">
+        <button id="login">Login</button>
+        <div class="eml">
+            Email: 
+        </div>
+        <div class="username">
+            User Name: 
+        </div>
+    </div>
+    <div class="modal">
+        <input type="text" name="username" placeholder="Enter username">
+        <input type="email" name="email" id="email" placeholder="Enter email">
+        <button>Click</button>
+        <button id="close">X</button>
+    </div>
+
+    <!-- TASK: take email & user name: pop up on hearder screen
+    clock on ok: store data in obj & also close the modal
+        1.handling the inpute boxes value and store the values in obj
+        2. User clocks on Ok: close the modal & simultaneously select the header section 
+            where username & email populates.
+        3. innerHTML ot innerText
+    -->
+    
+    <script src="./learningModal.js"></script>
+</body>
+</html>
