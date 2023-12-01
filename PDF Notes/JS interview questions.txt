@@ -1,4 +1,4 @@
- 	1.Events type: click, change, mouseover, mouseout, keyup, and keydown
+ 	1.Events type: click, change, mouseover, mouseout, keyup, and keydown, keypress, submit, onLoad
         2. Event Propagation, event capturing & event bubbling
         3. Difference between nodelist & HTMLCollection
         4. innerHTML Vs innerText Vs Value 
@@ -6,3 +6,4 @@
         6. Updating the values and styles
         7. Case: Modal Making - JS & CSS 
 	8. Style manipulation - classList (add classes) and style
+	9. Difference between NodeList and HTMLCollections?

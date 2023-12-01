@@ -14,7 +14,7 @@ function changeColor() {
 //1st Method
 // btn.addEventListener('click',changeColor);
 
-//2nd Method
+//2nd Method using IIFE function
 btn.addEventListener('click',()=>{
    // btn.style.color='red';
    console.log("Button being clicked!!");
@@ -64,6 +64,7 @@ email.addEventListener('change',(event)=>{
     console.log(event.target.name, event.target.value); 
     obj[event.target.name]=event.target.value
 })
+
 
 
 
