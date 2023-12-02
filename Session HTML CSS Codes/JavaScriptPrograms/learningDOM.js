@@ -132,3 +132,22 @@ input.addEventListener('change',function(event){
 //Pick your subject : make a checkbox : give 4 subjects
 //pick your gender : make radio button : male & female
 
+//Keypress Event
+const btnA = document.querySelector("#btn-a")
+btnA.addEventListener('keypress',function(event){
+    console.log(event.key)
+    if(event.key=='a'){
+        console.log("Person should go left");
+    }
+    if(event.key=='d'){
+        console.log("Person should go right");
+    }
+    if(event.key=="enter"){
+        console.log("Person should jump");
+    }
+})
+
+const form = document.querySelector("form");
+form.addEventListener('submit',function(event){
+    event.preventDefault();  //prevent form from reloading
+})
