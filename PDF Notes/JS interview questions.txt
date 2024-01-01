@@ -7,3 +7,4 @@
         7. Case: Modal Making - JS & CSS 
 	8. Style manipulation - classList (add classes) and style
 	9. Difference between NodeList and HTMLCollections?
+	10. What is asynch and await?

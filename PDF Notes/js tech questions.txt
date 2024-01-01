@@ -1,0 +1,48 @@
+(function () {
+    try {
+        throw new Error();
+    } catch (x) {
+        var x = 1, y = 2;
+        console.log(x);
+    }
+    console.log(x);
+    console.log(y);
+})();
+
+
+================================
+
+
+(function(){
+    var a = b = 100;
+  })();
+  
+  console.log(typeof a !== 'undefined');
+  console.log(typeof b !== 'undefined');
+
+========================================
+
+var a = null;
+console.log(typeof a === "object");
+
+
+=====================================
+
+typeof undefined == typeof NULL
+
+======================================
+
+typeof undefined == typeof null
+
+==================================
+var arr1 = "preparation".split('');
+var arr2 = arr1.reverse();
+var arr3 = "preps".split('');
+arr2.push(arr3);
+console.log("length=" + arr1.length + " last=" + arr1.slice(-1));
+console.log("length=" + arr2.length + " last=" + arr2.slice(-1));
+
+==================================
+
+
+
